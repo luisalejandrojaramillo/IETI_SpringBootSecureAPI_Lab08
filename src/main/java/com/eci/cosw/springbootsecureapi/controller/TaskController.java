@@ -12,7 +12,7 @@ import com.mashape.unirest.http.Unirest;
 
 @RestController
 @RequestMapping( "api" )
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class TaskController {
     //https://taskplannerieti.azurewebsites.net/api/list-tasks?code=7Fsi5lElz3ImDt3a4ne9KqDaRhbvV/pNfVexRdvTa/1ZySexKBZYnw==
     @Autowired
