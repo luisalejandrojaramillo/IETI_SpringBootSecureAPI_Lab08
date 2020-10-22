@@ -48,9 +48,10 @@ public class UserController
             throw new ServletException( "User username not found." );
         }
 
+        String usr = user.getEmail();
         String pwd = user.getPassword();
 
-        if ( !password.equals( pwd ) )
+        if ( !username.equals( usr ) || !password.equals( pwd ) )
         {
             throw new ServletException( "Invalid login. Please check your name and password." );
         }
